@@ -2,12 +2,7 @@ import { useState } from 'react'
 import { Card } from '../card/Card';
 import './ratingCard.css'
 
-export function RatingCard({ handleSubmit }: { handleSubmit: Function }) {
-  const [rating, setRating] = useState<number>(0)
-  const handleRating = (rate: number) => {
-    setRating(rate);
-  };
-
+export function RatingCard({ rating, handleSubmit, handleRating }: { rating: number, handleSubmit: Function, handleRating: Function }) {
   return <Card children={
     <>
       <div className='rating_card__img'><img src="/icon-star.svg" alt="" /></div>
