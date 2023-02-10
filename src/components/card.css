@@ -81,3 +81,8 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.card__button:hover {
+  background-color: var(--neutral-100);
+  color: var(--primary);
+}
