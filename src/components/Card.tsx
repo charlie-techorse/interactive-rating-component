@@ -2,7 +2,7 @@ import './card.css'
 
 export function Card() {
   return <div className='card'>
-    <div className='card__img'><img src="icon-start.svg" alt="" /></div>
+    <div className='card__img'><img src="/icon-star.svg" alt="" /></div>
     <div className='card__content'>
       <div className='card__content-wrapper'>
         <h1 className='card__content-title'>How did we do?</h1>
