@@ -9,6 +9,9 @@ export function ThankYouCard({ rated }: { rated: number }) {
       <div className='thank_you_card__rated'>
         <p>You selected {rated} out of 5</p>
       </div>
+      <p className='thank_you_card__description'>
+        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+      </p>
     </>
   } />
 }

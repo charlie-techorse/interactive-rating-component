@@ -13,3 +13,11 @@
   align-items: center;
   height: 30px;
 }
+
+.thank_you_card__thanks {
+  color: var(--neutral-100);
+  font-weight: var(--font-weight-500);
+  font-size: 24px;
+  text-align: center;
+}
+
