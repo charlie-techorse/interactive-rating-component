@@ -9,9 +9,6 @@
   justify-content: center;
   align-items: center;
   height: 30px;
-}
-
-.thank_you_card__rated p {
   background-color: var(--neutral-600);
   color: var(--primary);
   border-radius: 20px;
