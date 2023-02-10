@@ -1,9 +1,22 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --primary: hsl(25, 97%, 53%);
+
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-300: hsl(217, 12%, 63%);
+  --neutral-500: hsl(216, 12%, 54%);
+  --neutral-700: hsl(213, 19%, 18%);
+  --neutral-900: hsl(216, 12%, 8%);
+
+  --font-weight-400: 400;
+  --font-weight-700: 700;
 }
 
+*,
 body {
   margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+p {
+  font-size: 15px;
 }
