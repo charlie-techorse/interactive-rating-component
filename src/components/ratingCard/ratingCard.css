@@ -1,4 +1,4 @@
-.card__img {
+.rating_card__img {
   width: fit-content;
   height: fit-content;
   border-radius: 50%;
@@ -8,28 +8,28 @@
   align-items: center;
 }
 
-.card__img img {
+.rating_card__img img {
   padding: 10px;
 }
 
-.card__title {
+.rating_card__title {
   color: var(--neutral-100);
   font-weight: var(--font-weight-500);
   font-size: 24px;
 }
 
-.card__description {
+.rating_card__description {
   color: var(--neutral-300);
   font-weight: var(--font-weight-500);
 }
 
-.card__ratings {
+.rating_card__ratings {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.card__rating {
+.rating_card__rating {
   padding: 5px;
   background-color: var(--neutral-600);
   width: 45px;
@@ -39,29 +39,29 @@
   border: none;
 }
 
-.card__rating p {
+.rating_card__rating p {
   margin: auto;
   color: var(--neutral-300);
 }
 
-.card__rating.active {
+.rating_card__rating.active {
   background-color: var(--neutral-500);
 }
 
-.card__rating.active p {
+.rating_card__rating.active p {
   color: var(--neutral-100);
 }
 
-.card__rating:hover {
+.rating_card__rating:hover {
   background-color: var(--primary);
   color: var(--neutral-100);
 }
 
-.card__rating:hover p {
+.rating_card__rating:hover p {
   color: var(--neutral-100);
 }
 
-.card__button {
+.rating_card__button {
   background-color: var(--primary);
   border: none;
   border-radius: 20px;
@@ -71,7 +71,7 @@
   letter-spacing: 2px;
 }
 
-.card__button:hover {
+.rating_card__button:hover {
   background-color: var(--neutral-100);
   color: var(--primary);
 }
