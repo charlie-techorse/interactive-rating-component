@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Card } from './components/Card'
+import { RatingCard } from './components/ratingCard/RatingCard'
 
 export function App() {
   const [cardSubmitted, setCardSubmitted] = useState(false)
@@ -11,6 +11,6 @@ export function App() {
   };
 
   return (
-    cardSubmitted == true ? <></> : <Card handleSubmit={handleSubmit} />
+    cardSubmitted == true ? <></> : <RatingCard handleSubmit={handleSubmit} />
   )
 }

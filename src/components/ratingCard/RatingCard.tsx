@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './card.css'
+import './ratingCard.css'
 
-export function Card({ handleSubmit }: { handleSubmit: Function }) {
+export function RatingCard({ handleSubmit }: { handleSubmit: Function }) {
   const [rating, setRating] = useState<number>(0)
   const handleRating = (rate: number) => {
     setRating(rate);
