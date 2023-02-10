@@ -15,7 +15,14 @@
 body {
   margin: 0;
   font-family: "Overpass", sans-serif;
+}
+
+main#root {
   background-color: var(--neutral-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 p {
