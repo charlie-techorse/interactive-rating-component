@@ -34,3 +34,23 @@
   color: var(--neutral-300);
   font-weight: var(--font-weight-500);
 }
+
+.card__ratings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card__rating {
+  padding: 5px;
+  background-color: var(--neutral-600);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.card__rating p {
+  margin: auto;
+  color: var(--neutral-300);
+}
