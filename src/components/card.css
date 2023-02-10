@@ -54,3 +54,13 @@
   margin: auto;
   color: var(--neutral-300);
 }
+
+.card__button {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  color: var(--neutral-100);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
