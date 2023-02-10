@@ -12,6 +12,6 @@ export function App() {
   };
 
   return (
-    cardSubmitted == true ? <ThankYouCard /> : <RatingCard handleSubmit={handleSubmit} />
+    cardSubmitted == true ? <ThankYouCard rated={1} /> : <RatingCard handleSubmit={handleSubmit} />
   )
 }
