@@ -17,7 +17,7 @@ export function RatingCard({ rating, handleSubmit, handleRating }: { rating: num
             onClick={() => handleRating(rate)}
             className={`rating_card__rating ${rating == rate ? "active" : ""}`}
             key={rate}>
-            <p>{rate}</p>
+            {rate}
           </button>
         ))}
       </div>
