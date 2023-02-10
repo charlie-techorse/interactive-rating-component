@@ -43,15 +43,33 @@
 .card__rating {
   padding: 5px;
   background-color: var(--neutral-600);
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   display: flex;
+  border: none;
 }
 
 .card__rating p {
   margin: auto;
   color: var(--neutral-300);
+}
+
+.card__rating.active {
+  background-color: var(--neutral-500);
+}
+
+.card__rating.active p {
+  color: var(--neutral-100);
+}
+
+.card__rating:hover {
+  background-color: var(--primary);
+  color: var(--neutral-100);
+}
+
+.card__rating:hover p {
+  color: var(--neutral-100);
 }
 
 .card__button {

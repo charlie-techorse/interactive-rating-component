@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import './card.css'
 
 export function Card() {
+  const [rating, setRating] = useState<number>(0)
+  const handleRating = (rate: number) => {
+    setRating(rate);
+  };
+
   return <div className='card'>
     <div className='card__img'><img src="/icon-star.svg" alt="" /></div>
     <h1 className='card__title'>How did we do?</h1>
@@ -9,9 +15,13 @@ export function Card() {
     </p>
     <div className='card__ratings'>
       {[1, 2, 3, 4, 5].map((rate: number) => (
-        <div className='card__rating' key={rate}>
+        <button
+          type="button"
+          onClick={() => handleRating(rate)}
+          className={`card__rating ${rating == rate ? "active" : ""}`}
+          key={rate}>
           <p>{rate}</p>
-        </div>
+        </button>
       ))}
     </div>
     <button className='card__button'>Submit</button>
