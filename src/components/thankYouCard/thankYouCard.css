@@ -21,3 +21,8 @@
   text-align: center;
 }
 
+.thank_you_card__description {
+  color: var(--neutral-300);
+  font-weight: var(--font-weight-500);
+  text-align: center;
+}
