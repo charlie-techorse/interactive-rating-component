@@ -5,13 +5,18 @@
 }
 
 .thank_you_card__rated {
-  background-color: var(--neutral-600);
-  color: var(--primary);
-  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 30px;
+}
+
+.thank_you_card__rated p {
+  background-color: var(--neutral-600);
+  color: var(--primary);
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px 15px;
 }
 
 .thank_you_card__thanks {
