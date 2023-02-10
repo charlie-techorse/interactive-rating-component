@@ -1,15 +1,10 @@
 import { useState } from 'react'
 import './card.css'
 
-export function Card() {
+export function Card({ handleSubmit }: { handleSubmit: Function }) {
   const [rating, setRating] = useState<number>(0)
   const handleRating = (rate: number) => {
     setRating(rate);
-  };
-
-  const handleSubmit = () => {
-    if (!rating) { return }
-    console.log('d')
   };
 
   return <div className='card'>
@@ -29,6 +24,6 @@ export function Card() {
         </button>
       ))}
     </div>
-    <button onClick={() => handleSubmit()} className='card__button'>Submit</button>
+    <button onClick={() => handleSubmit(rating)} className='card__button'>Submit</button>
   </div>
 }
