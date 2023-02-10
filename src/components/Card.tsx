@@ -7,6 +7,11 @@ export function Card() {
     setRating(rate);
   };
 
+  const handleSubmit = () => {
+    if (!rating) { return }
+    console.log('d')
+  };
+
   return <div className='card'>
     <div className='card__img'><img src="/icon-star.svg" alt="" /></div>
     <h1 className='card__title'>How did we do?</h1>
@@ -24,6 +29,6 @@ export function Card() {
         </button>
       ))}
     </div>
-    <button className='card__button'>Submit</button>
+    <button onClick={() => handleSubmit()} className='card__button'>Submit</button>
   </div>
 }
